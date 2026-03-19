@@ -2,9 +2,6 @@ from django.db import models
 from vehicles.models import Vehicle
 
 
-
-
-
 # Modelo que representa uma vaga de estacionamento
 class ParkingSpot(models.Model):
     spot_number = models.IntegerField(

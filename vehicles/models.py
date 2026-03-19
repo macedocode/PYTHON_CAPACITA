@@ -14,10 +14,12 @@ class VehicleType(models.Model):
         null=True,
         verbose_name='Descrição',
     )
+
     created_at = models.DateTimeField(
         auto_now_add=True,
         verbose_name='Criado em',
     )
+
     updated_at = models.DateTimeField(
         auto_now=True,
         verbose_name='Atualizado em',
@@ -30,9 +32,12 @@ class VehicleType(models.Model):
     
     def __str__(self):
         return self.name
-    
+
+
+# Modelo para representar um veículo
 class Vehicle(models.Model):
-    Vehicle_Type = models.ForeignKey(
+
+    vehicle_type = models.ForeignKey(
         VehicleType,
         on_delete=models.PROTECT,
         blank=True,
@@ -40,29 +45,34 @@ class Vehicle(models.Model):
         related_name='vehicles',
         verbose_name='Tipo de Veículo'
     )
+
     license_plate = models.CharField(
         max_length=10,
         unique=True,
         verbose_name='Placa',
     )
+
     brand = models.CharField(
         max_length=50,
         blank=True,
         null=True,
         verbose_name='Marca',
     )
+
     model = models.CharField(
         max_length=50,
         blank=True,
         null=True,
         verbose_name='Modelo',
     )
+
     color = models.CharField(
         max_length=20,
         blank=True,
         null=True,
         verbose_name='Cor',
     )
+
     owner = models.ForeignKey(
         Customer,
         on_delete=models.PROTECT,
@@ -71,10 +81,12 @@ class Vehicle(models.Model):
         related_name='vehicles',
         verbose_name='Proprietário'
     )
+
     created_at = models.DateTimeField(
         auto_now_add=True,
         verbose_name='Criado em',
     )
+
     updated_at = models.DateTimeField(
         auto_now=True,
         verbose_name='Atualizado em',
