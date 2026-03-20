@@ -1,4 +1,6 @@
                                   ---------------PARKING_SERVICE----------------
+Name: LUCAS MACEDO IMBIRUSSU
+
 Descrição
 
 Sistema de gerenciamento de estacionamento desenvolvido utilizando Python com framework Django, com objetivo de oferecer uma solução versátil e de alta performance, projetada para se adaptar à realidade de pequenos e grandes estacionamentos
