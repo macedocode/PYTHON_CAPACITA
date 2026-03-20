@@ -1,4 +1,4 @@
-                                     ---------------PARKING_SERVICE----------------
+                                  ---------------PARKING_SERVICE----------------
 Descrição
 
 Sistema de gerenciamento de estacionamento desenvolvido utilizando Python com framework Django, com objetivo de oferecer uma solução versátil e de alta performance, projetada para se adaptar à realidade de pequenos e grandes estacionamentos
@@ -40,11 +40,14 @@ Sistema marca a vaga como ocupada automaticamente
 Quando define horário de saída, a vaga é liberada.
 
  Como executar o Sistema
+
 python manage.py migrate
+
 python manage.py runserver
 
 Acesse:
 http://127.0.0.1:8000/admin
+
 
 Projeto acadêmico.
 
